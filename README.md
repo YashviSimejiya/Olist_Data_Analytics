@@ -24,6 +24,12 @@ recommendations**.
 
 ------------------------------------------------------------------------
 
+### 📊 Excel Dashboard
+
+[Open the Excel Dashboard](https://docs.google.com/spreadsheets/d/1foH7TUPf1jipeb-yUJnoyJuv6CK74rIJ/edit?usp=sharing)
+
+------------------------------------------------------------------------
+
 ## What This Project Demonstrates
 
 This project answers questions such as:
