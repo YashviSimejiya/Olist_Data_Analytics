@@ -26,7 +26,7 @@ recommendations**.
 
 ### 📊 Excel Dashboard
 
-[Open the Excel Dashboard](https://docs.google.com/spreadsheets/d/1foH7TUPf1jipeb-yUJnoyJuv6CK74rIJ/edit?usp=sharing)
+[Download the Excel Dashboard (.xlsx)](https://drive.google.com/uc?export=download&id=1foH7TUPf1jipeb-yUJnoyJuv6CK74rIJ)
 
 ------------------------------------------------------------------------
 
