@@ -184,7 +184,7 @@ November 2017**.
 
 ## Key Business Insights
 
-### 1. Strong Sales Growth {#1-strong-sales-growth}
+### 1. Strong Sales Growth
 
 Product sales reached approximately **₹13.59M**, with approximately
 **20% growth from 2017 to 2018**.
@@ -192,7 +192,7 @@ Product sales reached approximately **₹13.59M**, with approximately
 **Action:** Protect high-performing products, categories, and periods
 through inventory and marketing planning.
 
-### 2. Geographic Concentration {#2-geographic-concentration}
+### 2. Geographic Concentration
 
 São Paulo represents approximately **43% of unique customers**, while
 the top three states represent approximately **69%**.
@@ -200,7 +200,7 @@ the top three states represent approximately **69%**.
 **Action:** Maintain strong logistics coverage in core markets while
 expanding acquisition in underrepresented regions.
 
-### 3. Strong Customer Satisfaction {#3-strong-customer-satisfaction}
+### 3. Strong Customer Satisfaction
 
 The average review score is **4.09/5**, with approximately **77% of
 reviews rated 4 or 5 stars**.
@@ -208,7 +208,7 @@ reviews rated 4 or 5 stars**.
 **Action:** Investigate low-rated orders by seller, category, and
 delivery performance to identify root causes.
 
-### 4. Strong Delivery Completion {#4-strong-delivery-completion}
+### 4. Strong Delivery Completion
 
 **97.02% of orders reached delivered status**, with average delivery
 time of approximately **12.50 days** for valid delivered orders.
@@ -216,7 +216,7 @@ time of approximately **12.50 days** for valid delivered orders.
 **Action:** Maintain high fulfillment completion while reducing delivery
 delays and monitoring their relationship with customer satisfaction.
 
-### 5. Freight Cost Exposure {#5-freight-cost-exposure}
+### 5. Freight Cost Exposure
 
 Freight totaled approximately **₹2.25M**, or roughly **16.6% of product
 sales**.
@@ -224,7 +224,7 @@ sales**.
 **Action:** Monitor freight alongside sales by month, region, seller,
 and order characteristics.
 
-### 6. Category Concentration {#6-category-concentration}
+### 6. Category Concentration
 
 **Health & Beauty, Watches & Gifts, and Bed & Bath Table** are among the
 strongest categories by product sales.
@@ -234,7 +234,7 @@ visibility and promotions for lower-performing categories.
 
 ------------------------------------------------------------------------
 
-## Customer & Advanced Analysis {#customer--advanced-analysis}
+## Customer & Advanced Analysis
 
 The SQL analysis goes beyond descriptive KPIs and includes:
 
@@ -252,7 +252,7 @@ products, sellers, or operational factors should be investigated?"**
 
 ------------------------------------------------------------------------
 
-## Data Quality & Analytical Validation {#data-quality--analytical-validation}
+## Data Quality & Analytical Validation
 
 A major part of the project was validating whether the analysis itself
 was trustworthy.
@@ -303,7 +303,7 @@ use dynamic measures rather than manually entered values.
 
 ------------------------------------------------------------------------
 
-## Tools & Technologies {#tools--technologies}
+## Tools & Technologies
 
 -   **MySQL** --- SQL analysis, joins, aggregation, validation, business
     questions
