@@ -1,4 +1,4 @@
-# Olist E-Commerce Analytics --- Business Insights {#olist-e-commerce-analytics--business-insights}
+# Olist E-Commerce Analytics --- Business Insights
 
 ## Executive Summary
 
@@ -17,7 +17,7 @@ category, delivery, review, and logistics analysis.
 
 ------------------------------------------------------------------------
 
-## 1. Strong Sales Growth {#1-strong-sales-growth}
+## 1. Strong Sales Growth
 
 ### Finding
 
@@ -40,7 +40,7 @@ categories, and periods.**
 
 ------------------------------------------------------------------------
 
-## 2. Geographic Customer Concentration {#2-geographic-customer-concentration}
+## 2. Geographic Customer Concentration
 
 ### Finding
 
@@ -63,7 +63,7 @@ customer acquisition in underrepresented regions.**
 
 ------------------------------------------------------------------------
 
-## 3. Strong Customer Satisfaction {#3-strong-customer-satisfaction}
+## 3. Strong Customer Satisfaction
 
 ### Finding
 
@@ -85,7 +85,7 @@ to identify recurring causes of dissatisfaction.**
 
 ------------------------------------------------------------------------
 
-## 4. Strong Delivery Performance {#4-strong-delivery-performance}
+## 4. Strong Delivery Performance
 
 ### Finding
 
@@ -107,7 +107,7 @@ areas and monitoring delivery time alongside customer reviews.**
 
 ------------------------------------------------------------------------
 
-## 5. Freight Cost Exposure {#5-freight-cost-exposure}
+## 5. Freight Cost Exposure
 
 ### Finding
 
@@ -133,19 +133,19 @@ during high-sales periods.**
 
 ------------------------------------------------------------------------
 
-## 6. High-Performing Product Categories {#6-high-performing-product-categories}
+## 6. High-Performing Product Categories
 
 ### Finding
 
 The strongest categories by product sales include:
 
-    Rank Category                    Approx. Product Sales
-  ------ ------------------------- -----------------------
-       1 Health & Beauty                            ₹1.26M
-       2 Watches & Gifts                            ₹1.21M
-       3 Bed & Bath Table                           ₹1.04M
-       4 Sports & Leisure                           ₹0.99M
-       5 Computers & Accessories                    ₹0.91M
+| Rank | Category | Approx. Product Sales |
+|---:|---|---:|
+| 1 | Health & Beauty | ₹1.26M |
+| 2 | Watches & Gifts | ₹1.21M |
+| 3 | Bed & Bath Table | ₹1.04M |
+| 4 | Sports & Leisure | ₹0.99M |
+| 5 | Computers & Accessories | ₹0.91M |
 
 ### What it means
 
@@ -160,7 +160,7 @@ promotions for lower-performing categories.**
 
 ------------------------------------------------------------------------
 
-## 7. Customer & Retention Analysis {#7-customer--retention-analysis}
+## 7. Customer & Retention Analysis
 
 The SQL analysis went beyond simple customer counts and included:
 
@@ -192,7 +192,7 @@ These analyses can support:
 
 ------------------------------------------------------------------------
 
-## 8. Seller & Product Analysis {#8-seller--product-analysis}
+## 8. Seller & Product Analysis
 
 The analysis also examined seller performance and product-level/category
 performance.
@@ -218,7 +218,7 @@ Seller and category analysis can support:
 
 ------------------------------------------------------------------------
 
-## 9. Payment Analysis {#9-payment-analysis}
+## 9. Payment Analysis
 
 Payment data was analyzed separately because payment rows can have a
 different grain from order-item rows.
@@ -240,7 +240,7 @@ records exist for an order.
 
 ------------------------------------------------------------------------
 
-## 10. Data Quality Was Part of the Analysis {#10-data-quality-was-part-of-the-analysis}
+## 10. Data Quality Was Part of the Analysis
 
 One of the strongest analytical lessons from the project was that
 correct-looking SQL can still produce incorrect business conclusions if
@@ -271,45 +271,45 @@ trustworthy.
 
 ------------------------------------------------------------------------
 
-## 11. Overall Business Assessment {#11-overall-business-assessment}
+## 11. Overall Business Assessment
 
-  Business Area           Assessment                                             Evidence
-  ----------------------- ------------------------------ --------------------------------
-  Sales Growth            **Strong**                       \~20% growth from 2017 to 2018
-  Customer Base           **Concentrated**                             Top 3 states ≈ 69%
-  Customer Satisfaction   **Strong**                                     4.09 / 5 average
-  Positive Reviews        **Strong**                               ≈ 77% rated 4--5 stars
-  Delivery Completion     **Strong**                                     97.02% delivered
-  Delivery Time           **Optimization Opportunity**               ≈ 12.50 days average
-  Freight Cost            **Significant Cost Area**              ≈ 16.6% of product sales
-  Category Performance    **Concentrated**                          Health & Beauty leads
+| Business Area | Assessment | Evidence |
+|---|---|---|
+| Sales Growth | **Strong** | ~20% growth from 2017 to 2018 |
+| Customer Base | **Concentrated** | Top 3 states ≈ 69% |
+| Customer Satisfaction | **Strong** | 4.09 / 5 average |
+| Positive Reviews | **Strong** | ≈ 77% rated 4–5 stars |
+| Delivery Completion | **Strong** | 97.02% delivered |
+| Delivery Time | **Optimization Opportunity** | ≈ 12.50 days average |
+| Freight Cost | **Significant Cost Area** | ≈ 16.6% of product sales |
+| Category Performance | **Concentrated** | Health & Beauty leads |
 
 ------------------------------------------------------------------------
 
-## 12. Priority Recommendations {#12-priority-recommendations}
+## 12. Priority Recommendations
 
-### Priority 1 --- Protect Growth {#priority-1--protect-growth}
+### Priority 1 --- Protect Growth
 
 Continue investing in high-performing products, categories, and sales
 periods while ensuring sufficient inventory and operational capacity.
 
-### Priority 2 --- Optimize Logistics {#priority-2--optimize-logistics}
+### Priority 2 --- Optimize Logistics
 
 Track sales, freight, and delivery performance together to identify
 where additional sales are generating disproportionately high logistics
 costs or delivery pressure.
 
-### Priority 3 --- Improve Customer Experience {#priority-3--improve-customer-experience}
+### Priority 3 --- Improve Customer Experience
 
 Use low review scores as a starting point for root-cause analysis across
 seller, category, and delivery dimensions.
 
-### Priority 4 --- Expand Geographically {#priority-4--expand-geographically}
+### Priority 4 --- Expand Geographically
 
 Use the strong customer base in major states as a foundation while
 targeting acquisition in underrepresented regions.
 
-### Priority 5 --- Strengthen Category Strategy {#priority-5--strengthen-category-strategy}
+### Priority 5 --- Strengthen Category Strategy
 
 Use category-level sales performance to guide inventory, promotions,
 merchandising, and marketing decisions.
