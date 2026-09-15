@@ -5,7 +5,7 @@ DAX**
 
 ------------------------------------------------------------------------
 
-## 1. Project Overview {#1-project-overview}
+## 1. Project Overview
 
 This project analyzes the **Olist Brazilian E-Commerce dataset** to
 evaluate business performance across sales, orders, customers, products,
@@ -24,9 +24,9 @@ business decisions.
 
 ------------------------------------------------------------------------
 
-## 2. Business Problem {#2-business-problem}
+## 2. Business Problem
 
-Raw e-commerce transactions do not directly explain whether the business
+Raw E-commerce transactions do not directly explain whether the business
 is growing, where customers are concentrated, which products drive
 sales, whether delivery performance is strong, or what operational
 issues may affect customer satisfaction.
@@ -69,7 +69,7 @@ The analysis therefore addresses questions across five major areas:
 
 ------------------------------------------------------------------------
 
-## 3. Project Objectives {#3-project-objectives}
+## 3. Project Objectives
 
 1.  Analyze overall sales and revenue performance.
 2.  Identify monthly and annual sales trends.
@@ -89,7 +89,7 @@ The analysis therefore addresses questions across five major areas:
 
 ------------------------------------------------------------------------
 
-## 4. Dataset & Data Model {#4-dataset--data-model}
+## 4. Dataset & Data Model
 
 The project uses nine Olist datasets:
 
@@ -145,7 +145,7 @@ unnecessarily flattening every table into one large dataset.
 
 ------------------------------------------------------------------------
 
-## 5. Data Preparation & Quality Control {#5-data-preparation--quality-control}
+## 5. Data Preparation & Quality Control
 
 Data preparation was performed in both MySQL and Excel Power Query.
 
@@ -172,21 +172,21 @@ Data preparation was performed in both MySQL and Excel Power Query.
 
 Several checks materially affected the analytical design.
 
-#### 1. Order-item grain {#1-order-item-grain}
+#### 1. Order-item grain
 
 A check based only on `order_item_id` would incorrectly suggest
 duplication because `order_item_id` restarts within different orders.
 
 **Correct grain:** `(order_id, order_item_id)`.
 
-#### 2. Customer identity {#2-customer-identity}
+#### 2. Customer identity
 
 Counting `customer_id` as customers would not correctly represent the
 actual customer base for repeat behavior.
 
 **Customer-level identity:** `customer_unique_id`.
 
-#### 3. Payment multiplication {#3-payment-multiplication}
+#### 3. Payment multiplication
 
 Joining raw order items directly to raw payments can multiply item-level
 sales because an order may have multiple payment rows.
@@ -194,7 +194,7 @@ sales because an order may have multiple payment rows.
 **Approach:** aggregate at the appropriate order grain before combining
 payment information with item-level analysis.
 
-#### 4. Review multiplication {#4-review-multiplication}
+#### 4. Review multiplication
 
 Joining item/category rows directly to reviews can repeat an order\'s
 review score across multiple item rows.
@@ -202,13 +202,13 @@ review score across multiple item rows.
 **Approach:** use order-level or deduplicated logic for review-based
 analysis.
 
-#### 5. Payment coverage {#5-payment-coverage}
+#### 5. Payment coverage
 
 The payment dataset contains one fewer order than the full order
 dataset, so payment coverage was explicitly checked rather than assuming
 every order has a payment row.
 
-#### 6. Cohort calculation {#6-cohort-calculation}
+#### 6. Cohort calculation
 
 Calendar-month cohort calculations use calendar month differences rather
 than raw elapsed-month duration, avoiding misleading cohort periods
@@ -219,7 +219,7 @@ analytical grain as part of the analysis**, not as an afterthought.
 
 ------------------------------------------------------------------------
 
-## 6. Analytical Logic & Metric Definitions {#6-analytical-logic--metric-definitions}
+## 6. Analytical Logic & Metric Definitions
 
 A key design decision was separating different monetary concepts.
 
@@ -252,7 +252,7 @@ item-level sales.
 
 ------------------------------------------------------------------------
 
-## 7. SQL Analysis {#7-sql-analysis}
+## 7. SQL Analysis
 
 MySQL was used for detailed exploration, validation, aggregation, and
 business-question analysis.
@@ -280,7 +280,7 @@ The complete SQL workflow is available in `SQL/Olist_Analytics_SQL.sql`.
 
 ------------------------------------------------------------------------
 
-## 8. Customer Analysis {#8-customer-analysis}
+## 8. Customer Analysis
 
 Customer analysis was designed around **actual customer identity**, not
 simply order records.
@@ -301,7 +301,7 @@ customer records.
 
 ------------------------------------------------------------------------
 
-## 9. Product, Category & Seller Analysis {#9-product-category--seller-analysis}
+## 9. Product, Category & Seller Analysis
 
 Product analysis uses item-level transactional data to identify:
 
@@ -316,7 +316,7 @@ categories easier to interpret in reporting.
 
 ------------------------------------------------------------------------
 
-## 10. Payment Analysis {#10-payment-analysis}
+## 10. Payment Analysis
 
 Payment data was analyzed separately from item-level sales because
 payment rows can have a different grain.
@@ -333,7 +333,7 @@ preventing the two concepts from being mixed in the dashboard.
 
 ------------------------------------------------------------------------
 
-## 11. Delivery & Customer Experience Analysis {#11-delivery--customer-experience-analysis}
+## 11. Delivery & Customer Experience Analysis
 
 Delivery performance was evaluated using order timestamps and delivery
 status.
@@ -355,7 +355,7 @@ are useful dimensions for further investigation.
 
 ------------------------------------------------------------------------
 
-## 12. DAX Measures & Calculations {#12-dax-measures--calculations}
+## 12. DAX Measures & Calculations
 
 The Excel Power Pivot model uses dynamic DAX measures for the dashboard.
 
@@ -399,7 +399,7 @@ hardcoded.
 
 ------------------------------------------------------------------------
 
-## 13. Dashboard & KPI Explanation {#13-dashboard--kpi-explanation}
+## 13. Dashboard & KPI Explanation
 
 The final dashboard provides a consolidated business-performance view.
 
@@ -441,7 +441,7 @@ rather than filling the page with every available metric.
 
 ------------------------------------------------------------------------
 
-## 14. Key Analytical Results {#14-key-analytical-results}
+## 14. Key Analytical Results
 
 -   **Product sales:** approximately **₹13.59M**
 -   **Orders:** **99,441**
@@ -460,7 +460,7 @@ November 2017**.
 
 ------------------------------------------------------------------------
 
-## 15. Business Insights {#15-business-insights}
+## 15. Business Insights
 
 ### Strong Sales Growth
 
@@ -512,37 +512,37 @@ merchandising, and promotional decisions.
 
 ------------------------------------------------------------------------
 
-## 16. Business Recommendations {#16-business-recommendations}
+## 16. Business Recommendations
 
-### 1. Protect High-Growth Areas {#1-protect-high-growth-areas}
+### 1. Protect High-Growth Areas
 
 Focus inventory and marketing efforts on high-performing categories,
 products, and sales periods.
 
-### 2. Optimize Logistics {#2-optimize-logistics}
+### 2. Optimize Logistics
 
 Monitor freight costs together with sales and delivery performance.
 High-sales periods deserve particular attention because logistics costs
 can rise with activity.
 
-### 3. Investigate Low-Rated Experiences {#3-investigate-low-rated-experiences}
+### 3. Investigate Low-Rated Experiences
 
 Analyze low-rated orders by **seller, category, and delivery
 performance** rather than assuming a single cause of dissatisfaction.
 
-### 4. Expand Beyond Concentrated Markets {#4-expand-beyond-concentrated-markets}
+### 4. Expand Beyond Concentrated Markets
 
 Maintain strong logistics coverage in major customer markets while
 developing acquisition strategies for underrepresented states.
 
-### 5. Strengthen Category Strategy {#5-strengthen-category-strategy}
+### 5. Strengthen Category Strategy
 
 Prioritize high-performing categories while improving visibility,
 merchandising, and promotions for lower-performing categories.
 
 ------------------------------------------------------------------------
 
-## 17. Conclusion {#17-conclusion}
+## 17. Conclusion
 
 The analysis indicates that Olist demonstrates strong overall business
 performance, supported by sales growth, high delivery completion, and
@@ -562,7 +562,7 @@ through QC, and interpreted in a business context**.
 
 ------------------------------------------------------------------------
 
-## 18. Portfolio Takeaways {#18-portfolio-takeaways}
+## 18. Portfolio Takeaways
 
 This project demonstrates practical Data Analyst capabilities in:
 
