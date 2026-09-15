@@ -47,7 +47,7 @@ This project answers questions such as:
 
 ## Business Problem
 
-Raw e-commerce transaction data does not directly reveal business
+Raw E-commerce transaction data does not directly reveal business
 performance or operational opportunities.
 
 The project evaluates:
@@ -92,7 +92,7 @@ Used for:
 -   Transformation
 -   Loading data into the analytical model
 
-### Excel Power Pivot + DAX {#excel-power-pivot--dax}
+### Excel Power Pivot + DAX 
 
 Used for:
 
@@ -113,7 +113,7 @@ Built with:
 
 ------------------------------------------------------------------------
 
-## Data Model & Analytical Grain {#data-model--analytical-grain}
+## Data Model & Analytical Grain
 
 The project uses nine Olist datasets:
 
