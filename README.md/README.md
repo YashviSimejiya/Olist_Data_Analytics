@@ -2,7 +2,7 @@
 
 ## End-to-End Data Analyst Portfolio Project
 
-An end-to-end e-commerce analytics project using the **Olist Brazilian
+An end-to-end E-commerce analytics project using the **Olist Brazilian
 E-Commerce dataset**, built to demonstrate the complete workflow from
 raw transactional data to validated business insights and an
 executive-style Excel dashboard.
