@@ -18,6 +18,12 @@ recommendations**.
 
 ------------------------------------------------------------------------
 
+## Dashboard Preview
+
+![Olist E-Commerce Analytics Dashboard](ScreenShots/01_Dashboard.png)
+
+------------------------------------------------------------------------
+
 ## What This Project Demonstrates
 
 This project answers questions such as:
