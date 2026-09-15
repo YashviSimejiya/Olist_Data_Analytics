@@ -323,7 +323,6 @@ Olist_Data_Analytics/
 ├── README.md
 │
 ├── Excel/
-│   ├── Archive/
 │   └── Olist_Analytics_Dashboard.xlsx
 │
 ├── SQL/
