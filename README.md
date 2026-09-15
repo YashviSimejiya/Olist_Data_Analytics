@@ -158,19 +158,19 @@ These decisions were validated through explicit QC checks.
 
 ## Key Results
 
-  KPI                                    Result
-  -------------------------- ------------------
-  Product Sales                     **₹13.59M**
-  Orders                             **99,441**
-  Unique Customers                   **96,096**
-  Delivered Orders                   **96,478**
-  Delivery Rate                      **97.02%**
-  Average Review Score             **4.09 / 5**
-  Average Delivery Time        **\~12.50 days**
-  Average Order Value               **₹159.33**
-  Freight                            **₹2.25M**
-  Freight / Product Sales           **\~16.6%**
-  2017 → 2018 Sales Growth            **\~20%**
+| KPI | Result |
+|---|---:|
+| Product Sales | **₹13.59M** |
+| Orders | **99,441** |
+| Unique Customers | **96,096** |
+| Delivered Orders | **96,478** |
+| Delivery Rate | **97.02%** |
+| Average Review Score | **4.09 / 5** |
+| Average Delivery Time | **~12.50 days** |
+| Average Order Value | **₹159.33** |
+| Freight | **₹2.25M** |
+| Freight / Product Sales | **~16.6%** |
+| 2017 → 2018 Sales Growth | **~20%** |
 
 The strongest monthly product-sales result was approximately **₹1.01M in
 November 2017**.
