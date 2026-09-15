@@ -93,17 +93,17 @@ The analysis therefore addresses questions across five major areas:
 
 The project uses nine Olist datasets:
 
-  Table                            Purpose                                                Key Identifier
-  -------------------------------- ------------------------------------------------------ -------------------------------------
-  `customers`                      Customer and location information                      `customer_id`, `customer_unique_id`
-  `orders`                         Order status and timestamps                            `order_id`
-  `order_items`                    Products, prices, freight, and sellers within orders   `order_id`, `order_item_id`
-  `order_payments`                 Payment methods, installments, and payment values      `order_id`
-  `order_reviews`                  Customer review scores and comments                    `review_id`, `order_id`
-  `products`                       Product information and categories                     `product_id`
-  `sellers`                        Seller information                                     `seller_id`
-  `geolocation`                    Brazilian geographic information                       Geographic identifiers
-  `product_category_translation`   Portuguese-to-English category translation             `product_category_name`
+| Table | Purpose | Key Identifier |
+|---|---|---|
+| `customers` | Customer and location information | `customer_id`, `customer_unique_id` |
+| `orders` | Order status and timestamps | `order_id` |
+| `order_items` | Products, prices, freight, and sellers within orders | `order_id`, `order_item_id` |
+| `order_payments` | Payment methods, installments, and payment values | `order_id` |
+| `order_reviews` | Customer review scores and comments | `review_id`, `order_id` |
+| `products` | Product information and categories | `product_id` |
+| `sellers` | Seller information | `seller_id` |
+| `geolocation` | Brazilian geographic information | Geographic identifiers |
+| `product_category_translation` | Portuguese-to-English category translation | `product_category_name` |
 
 ### Analytical Grain
 
@@ -359,19 +359,19 @@ are useful dimensions for further investigation.
 
 The Excel Power Pivot model uses dynamic DAX measures for the dashboard.
 
-  Measure                   Purpose
-  ------------------------- ------------------------------------------------------
-  `Total Sales`             Calculates total product sales
-  `Total Freight`           Calculates total freight value
-  `Total Revenue`           Calculates product sales plus freight
-  `Total Orders`            Counts distinct orders
-  `Total Customers`         Counts distinct customers using `customer_unique_id`
-  `Delivered Orders`        Counts delivered orders
-  `Delivery Rate`           Calculates the percentage of orders delivered
-  `Average Delivery Days`   Calculates average delivery time for valid orders
-  `Average Review Score`    Calculates average customer review score
-  `Average Order Value`     Calculates average revenue per order
-  `Number of Reviews`       Counts review records
+| Measure | Purpose |
+|---|---|
+| `Total Sales` | Calculates total product sales |
+| `Total Freight` | Calculates total freight value |
+| `Total Revenue` | Calculates product sales plus freight |
+| `Total Orders` | Counts distinct orders |
+| `Total Customers` | Counts distinct customers using `customer_unique_id` |
+| `Delivered Orders` | Counts delivered orders |
+| `Delivery Rate` | Calculates the percentage of orders delivered |
+| `Average Delivery Days` | Calculates average delivery time for valid orders |
+| `Average Review Score` | Calculates average customer review score |
+| `Average Order Value` | Calculates average revenue per order |
+| `Number of Reviews` | Counts review records |
 
 ### Average Delivery Days
 
@@ -405,14 +405,14 @@ The final dashboard provides a consolidated business-performance view.
 
 ### KPI Cards
 
-  KPI                         Result Meaning
-  ------------------- -------------- -----------------------------------------------
-  Total Sales            **₹13.59M** Total product sales
-  Total Orders            **99,441** Distinct orders
-  Total Customers         **96,096** Distinct customers using `customer_unique_id`
-  Delivery Rate           **97.02%** Share of orders reaching delivered status
-  Avg. Review Score     **4.09 / 5** Overall customer satisfaction
-  Avg. Order Value       **₹159.33** Average total revenue per order
+ | KPI | Result | Meaning |
+|---|---:|---|
+| Total Sales | **₹13.59M** | Total product sales |
+| Total Orders | **99,441** | Distinct orders |
+| Total Customers | **96,096** | Distinct customers using `customer_unique_id` |
+| Delivery Rate | **97.02%** | Share of orders reaching delivered status |
+| Avg. Review Score | **4.09 / 5** | Overall customer satisfaction |
+| Avg. Order Value | **₹159.33** | Average total revenue per order |
 
 > **Currency note:** The Olist source dataset is Brazilian and its
 > monetary values are denominated in Brazilian Real (BRL). The dashboard
